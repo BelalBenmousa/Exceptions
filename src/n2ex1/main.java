@@ -10,7 +10,7 @@ public class main {
         Producte p2 = new Producte("sdad", 35.5);
 
         //si està buida provoquem una exepcio tipos VendaBuidaExepcion
-        //productes.add(p1);
+        productes.add(p1);
         //productes.add(p2);
 
         Venda venda = new Venda(productes);

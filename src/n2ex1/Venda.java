@@ -21,8 +21,7 @@ public class Venda {
     public double calcularTotal(Collection<Producte> productes) throws VendaBuidaException {
         double preuTotal = 0;
         if(productes.isEmpty()){
-            String errorMisatge = "Per fer una venda primer has d’afegir productes";
-            throw new VendaBuidaException(errorMisatge);
+            throw new VendaBuidaException();
         }
         else {
             preuTotal = productes.stream().mapToDouble(o -> o.getPreu()).sum();
